@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="row">
+        <div class="col-sm">
+            Seja bem vindo
+        </div>
+        <div class="col-sm">
+            <a href="{% url 'clientes_lista' %}">Gerenciamento de Clientes</a>
+        </div>
+        <div class="col-sm">
+            <a href="{% url 'logout' %}">Logout</a>
+        </div>
+    </div>
+{% endblock %}
